@@ -5,28 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Lobster&family=Roboto:wght@100;400&family=Rubik+Moonrocks&family=Square+Peg&display=swap" rel="stylesheet">
     <title>Lobsters</title>
-    
 </head>
 <body>
     <div class="navbar">
         <div class="title">LOBSTERS IN THE SKY</div>
         <div class="other-words">Connie Clayton + Steph</div>
-        <script src="script.js"></script>
     </div>
     <!-- <h1>Mouse Tracker</h1>
         <div class="eye">
             <div class="eyeBall"></div>
         </div> -->
     <div class="main">
+        <div class="clouds">
+            <img src="/imgs/cloud.png"  class = "thumbnail" id = "cloud-img" alt="">
+        </div>
         <div class="lobster">
-            <div class="lobster-bod"></div>
-            <h1>Mouse Tracker</h1>
+            <img src="/imgs/lobster.png"  id = "lobster-img" alt="">
+            <!-- <div class="lobster-bod"></div> -->
                 <div id="eye">
                     <div id="eyeBall"></div>
                 </div>
-            </div>
+        </div>
+        <div class="clouds">
+            <img src="/imgs/cloud.png"  id = "cloud-img-2" alt="">
         </div>
     </div>
+    <script src="script.js"></script>
+    <script src="simpleParallax.js"></script>
 </body>
 </html>

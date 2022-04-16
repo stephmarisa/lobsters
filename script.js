@@ -14,3 +14,8 @@ document.onmouseout = (event) => {
     eyeBall.style.left = "50%";
     eyeBall.style.top = "50%";
 }
+
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+	orientation: 'right'
+});

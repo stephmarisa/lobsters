@@ -1,17 +1,23 @@
-
-.main{
+body{
     height: 1000px;
     background-image: linear-gradient(#988fc1, #91add6);
+}
+.main{
+    height: 1000px;
+    /* background-image: linear-gradient(#988fc1, #91add6); */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .navbar{
-    background: black;
+    /* background: black; */
     color:white;
     display: flex;
     justify-content: space-between;
     padding: 40px;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+
 }
 .lobster-bod{
     width: 100px;
@@ -23,23 +29,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 body{
-    background:#4f4fdb;
     text-align:center;
 }
 
 h1{
     font-family: Mate Sc;
-    font-size: 3em;
+    font-size: 20px;
     color: white;
 }
 
 #eye{
     position:absolute;
-    top:50%;
-    left:50%;
+    top:57%;
+    left:45%;
     transform: translate(-50%,-50%);
-    height: 250px;
-    width:250px;
+    height: 70px;
+    width:70px;
     background:white;
     border-radius: 50%;
     overflow: hidden;
@@ -48,12 +53,25 @@ h1{
 
 #eyeBall{
     position: absolute;
-    top:50%;
+    top:55%;
     left:50%;
-    height: 70px;
-    width:70px;
+    height: 20px;
+    width:20px;
     transform: translate(-50%,-50%);
     background:black;
     border-radius: 50%;
     transition:0;
+}
+#lobster-img{
+    width: 70%;
+}
+#cloud-img{
+    top: 100px;
+    position:absolute;
+    width: 60%;
+}
+#cloud-img-2{
+    top: 60%;
+    position:absolute;
+    width: 60%;
 }
