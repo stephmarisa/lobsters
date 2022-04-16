@@ -1,3 +1,5 @@
+
+
 var eyeBall = document.querySelector('#eyeBall');
 
 document.onmousemove = (event) => {
@@ -19,3 +21,4 @@ var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, {
 	orientation: 'right'
 });
+
