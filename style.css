@@ -1,6 +1,9 @@
 body{
-    height: 1000px;
-    background-image: linear-gradient(#988fc1, #91add6);
+    height: 1200px;
+    background-image: linear-gradient(#8f92c1, #a0d6f0);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .main{
     height: 1000px;
@@ -24,7 +27,13 @@ body{
     height: 200px;
     background-color: rgb(170, 52, 16);
 }
-
+.lobster{ 
+    animation: rotation 4s infinite linear;
+}
+.lobster:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
 /* eye */
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
@@ -40,27 +49,37 @@ h1{
 
 #eye{
     position:absolute;
-    top:57%;
-    left:45%;
+    top:22%;
+    left:42%;
     transform: translate(-50%,-50%);
-    height: 70px;
-    width:70px;
+    height: 50px;
+    width:50px;
     background:white;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 30px 1px #222236ad;
+    animation: blink 5s infinite;
 }
 
 #eyeBall{
     position: absolute;
     top:55%;
     left:50%;
-    height: 20px;
-    width:20px;
+    height: 10px;
+    width:10px;
     transform: translate(-50%,-50%);
     background:black;
     border-radius: 50%;
     transition:0;
+}
+.eye-background{
+    position: absolute;
+    height: 50px;
+    width:50px;
+    top: 22%;
+    left: 42%;
+    background-color: rgb(148, 55, 32);
+    border-radius: 50%;
 }
 #lobster-img{
     width: 70%;
@@ -74,4 +93,54 @@ h1{
     top: 60%;
     position:absolute;
     width: 60%;
+    left: 45%;
 }
+#cloud-img-3{
+    top: 100%;
+    position:absolute;
+    width: 40%;
+    left: 10%;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%,
+    95% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes rotation {
+        0% {
+        -webkit-transform: rotate(0deg);
+        }
+        25% {
+        -webkit-transform: rotate(3deg);
+        }
+        50% {
+        -webkit-transform: rotate(0deg);
+        }
+        75% {
+        -webkit-transform: rotate(-3deg);
+        }
+        100% {
+        -webkit-transform: rotate(0deg);
+        }
+    }

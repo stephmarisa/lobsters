@@ -19,6 +19,7 @@ document.onmouseout = (event) => {
 
 var image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, {
-	orientation: 'right'
+	orientation: 'right',
+    scale: 2
 });
 
