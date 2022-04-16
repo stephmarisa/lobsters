@@ -1,0 +1,59 @@
+
+.main{
+    height: 1000px;
+    background-image: linear-gradient(#988fc1, #91add6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    background: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.lobster-bod{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(170, 52, 16);
+}
+
+/* eye */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body{
+    background:#4f4fdb;
+    text-align:center;
+}
+
+h1{
+    font-family: Mate Sc;
+    font-size: 3em;
+    color: white;
+}
+
+#eye{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 250px;
+    width:250px;
+    background:white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px 1px #222236ad;
+}
+
+#eyeBall{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 70px;
+    width:70px;
+    transform: translate(-50%,-50%);
+    background:black;
+    border-radius: 50%;
+    transition:0;
+}
